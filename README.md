@@ -41,15 +41,41 @@ The proposed **Fusion Model** significantly outperformed single-encoder baseline
 
 ##  Repository Structure
 
-| File/Folder | Description |
-| :--- | :--- |
-| `01_Data_Collection.ipynb` | Web scraping and data synthesis scripts. |
-| `02_Preprocessing.ipynb` | Text cleaning, normalization, and LaBSE filtering. |
-| `03_Model_Training_Fusion.ipynb` | Training the Multi-View Fusion Classifier (mBERT + XLM-R). |
-| `04_Model_Training_NLLB.ipynb` | Fine-tuning the NLLB-200 Translation model. |
-| `05_Evaluation.ipynb` | Generating Confusion Matrices, ROC Curves, and BLEU scores. |
-| `06_SRS_Generator.py` | Script to generate the final IEEE 830 PDF/Docx. |
-| `requirements.txt` | List of dependencies (PyTorch, Transformers, etc.). |
+## 📂 Project Workflow & File Description
+
+This repository is organized sequentially to replicate the entire Requirements Engineering pipeline, from raw data collection to final documentation.
+
+### **Phase 1: Data Preparation**
+* **`01_Data_Collection.ipynb`**
+    * **Purpose:** Handles the scraping of raw Hausa text from technical forums and the synthesis of parallel data.
+    * **Key Output:** Generates the raw, uncleaned dataset containing mixed-quality Hausa-English pairs.
+    
+* **`02_Preprocessing.ipynb`**
+    * **Purpose:** Performs rigorous cleaning, tokenization, and quality assurance.
+    * **Methodology:** Implements **LaBSE (Language-Agnostic BERT Sentence Embeddings)** to compute semantic similarity scores between sentence pairs. Pairs with a similarity score below 0.6 are automatically discarded to remove "noisy" translations.
+    * **Key Output:** `clean_dataset.csv` (High-quality, aligned data ready for training).
+
+### **Phase 2: Model Training**
+* **`03_Model_Training_Fusion.ipynb`**
+    * **Purpose:** Trains the classification model to distinguish between Functional (FR) and Non-Functional (NFR) requirements.
+    * **Architecture:** Implements the **Multi-View Fusion** strategy, loading both `mBERT` and `XLM-R` simultaneously. It freezes their base layers and trains a shared "Fusion Layer" to combine their embeddings.
+    * **Key Output:** `fusion_model_state.bin` (The trained classifier weights).
+
+* **`04_Model_Training_NLLB.ipynb`**
+    * **Purpose:** Fine-tunes the translation model to convert Hausa requirements into technical English.
+    * **Methodology:** Uses **LoRA (Low-Rank Adaptation)** to fine-tune the massive **NLLB-200** model on consumer hardware (e.g., Colab T4 GPU). It forces the model to learn engineering terminology (e.g., *Shiga* -> *Log in*).
+    * **Key Output:** `nllb_lora_weights/` (Adapter weights for translation).
+
+### **Phase 3: Evaluation & Deployment**
+* **`05_Evaluation.ipynb`**
+    * **Purpose:** Generates all statistical proofs and graphs found in the thesis.
+    * **Metrics:** Calculates Accuracy, F1-Score, and generates the Confusion Matrix for classification. For translation, it computes BLEU, chrF, and LaBSE scores.
+    * **Visuals:** Produces the t-SNE scatter plots showing the separation of FR/NFR clusters.
+
+* **`06_SRS_Generator.py`**
+    * **Purpose:** The final application script.
+    * **Function:** Takes a raw text file of Hausa requirements, runs it through the Fusion and NLLB models, and automatically formats the output into a structured **IEEE 830-1998** PDF or DOCX file.
+    * **Usage:** Run this script to demonstrate the system end-to-end.
 
 ## 🛠️ Installation & Usage
 
