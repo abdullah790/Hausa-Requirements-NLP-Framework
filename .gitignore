@@ -1,0 +1,16 @@
+# Ignore Model Weights (Too large for GitHub)
+*.pt
+*.bin
+*.safetensors
+*.h5
+*.ckpt
+/models/
+/saved_models/
+
+# Ignore Python Cache and Colab Metadata
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Ignore Dataset (Optional - keep if <100MB, ignore if >100MB)
+# *.csv

@@ -1,0 +1,40 @@
+Source: Maganin ya kamata ya samar da damar kama sabbin <TECH> da kuma gabatar da tarihin marasa lafiya na yanzu, gami da abubuwa masu kyau da marasa kyau.
+Ref:    The solution should provide the ability to capture update and present current patient history including pertinent positive and negative elements.
+Hyp:    The solution should provide the ability to capture new and present current patient history including pros and cons.
+------------------------------
+Source: NFR, Samfurin zai nuna kowanne nau'in jirgi a cikin grid ta amfani da hoton takamaiman nau'in jirgin.
+Ref:    NFR,The product shall display each type of ship in a grid using an image of the specific type of ship.
+Hyp:    NFR,The product shall display each type of aircraft in the grid using a picture of the specific type of aircraft.
+------------------------------
+Source: Ruwan_Sha: (idan_sha_kashi, lambar_mai_amfani, adadin, tambarin lokaci).
+Ref:    Water_Intakes: (intake_id, user_id, amount, timestamp).
+Hyp:    Water_shape: (if_shape_percentage, user_number, quantity, timestamp).
+------------------------------
+Source: (c) Kowace ƙungiyar MA mai cancanta dole ne ta tabbatar da cewa an lissafa duk EPs masu yuwuwar cancantar MA ta hanyar tsarin NPI  kuma an ba da sauran bayanan gano  da ake buƙata a ƙarƙashin Â§ 495.202(b) ga CMS.
+Ref:    (c) Each qualifying MA organization must ensure that all potentially qualifying MA EPs are enumerated through the NPI system and that other identifying information required under Â§ 495.202(b) is provided to CMS.
+Hyp:    (c) Each qualifying MA organization must ensure that all potential EPs are listed by the NPI system and that other identification information required under Â§ 495.202(b) is provided to the CMS.
+------------------------------
+Source: Tsarin  ya kamata ya samar da tabbacin biyan kuɗi sannan ya nuna shi ga mai amfani da <TECH>.
+Ref:    The system should generate a payment confirmation and display it to the user.
+Hyp:    The system should provide payment confirmation and display it to the user.
+------------------------------
+Source: Aikace-aikacen wayar hannu <TECH> ya fi daɗi.
+Ref:    Mobile Application is more comfortable.
+Hyp:    The mobile application is more enjoyable.
+------------------------------
+Source: 2.1 Manufa/Manufofi: Babban manufar ita ce taimaka wa ƙungiyar wajen kula da bayanan mai bayarwa  da kuma samun damar shiga <TECH>bayanai kamar yadda ake buƙata. Manhajar kuma za ta iya bin diddigin bayanan mai bayarwa da bayanan ma'aikata waɗanda mai gudanarwa <TECH> da ma'aikata za su iya samu.
+Ref:    2.1 Purpose/Objectives: The main purpose is to help the organization for maintaining donor data and access the data as per need. The software can also track donor details and staff details which is accessible by administrator and staff.
+Hyp:    2.1 Purpose/Purpose: The main objective is to help the team manage the issuer's information and access the information as needed. The app can also track the issuer's information and employee information that the administrator and employees can access.
+------------------------------
+Source: NFR, dole ne mu mu sami damar yin hulɗa da kowace burauzar H<TECH>TML.
+Ref:    NFR,We must be able to interface with any HTML browser.
+Hyp:    NFR,we must be able to interact with any HTML browser.
+------------------------------
+Source: Sigar Kare Intanet ta 1.0 3.1.6 Ɗan ƙasa Shiga & Zane-zanen Ayyukan Hira Kowane ɗan ƙasa zai iya shiga a cikin wannan tsarin . Idan an tabbatar da shi mai amfani  to zai iya yin hira, nemi aiki kuma ya ba da shawarwari da shawarwari ga hukumar sirri. Idan ɗan ƙasa yana son neman aiki, dole ne ya cike fom ɗin aikace-aikacen  tare da bayanansa. Bayan shiga zai iya tura kai tsaye zuwa shafin farko. Ɗan ƙasa zai iya yin hira da mataimakin hukumar sirri kuma ɗan ƙasa zai iya ba da shawarwari da shawarwari ga hukumar sirri. Kwalejin Injiniya ta Cyber Crunch L.D., Ahmedabad shafi na 33
+Ref:    Cybernetics Protector Version 1.0 3.1.6 Citizen Login & Chatting Activity Diagram Every citizen of country can login in this system.If he is verified user than he is able for chatting , apply for job and also give tips and suggestion to secret agency.If citizen want to apply for job than he has to fill up application form with his details. After login he can directly redirect to the home page. Citizen can chat with chat assistant of secret agency and citizen can also give tips and suggestion to secret agency. Cyber Crunch L.D. College of Engineering, Ahmedabad page-33
+Hyp:    Internet Protection Version 1.0 3.1.6 Citizen Login & Chat Activity Diagram Each citizen can participate in this system. If proven user then he can interview, apply for a job and give suggestions and suggestions to the private agency. If a citizen wants to apply for a job, he must fill in the application form with his details. After login he can direct to the home page. Citizen can interview the private agency's assistant and citizen can give suggestions and suggestions to the private agency. If the citizen wants to apply for a job, he can directly direct to the home page
+------------------------------
+Source: Tsarin za ta lissafin kuɗin shiga (aikin abokin ciniki).
+Ref:    System shall calculate fares (client function).
+Hyp:    System shall calculate revenue (client activity).
+------------------------------

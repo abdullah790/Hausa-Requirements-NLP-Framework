@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "domain": "Software Requirements Specification",
+    "languages": ["en", "ha"],
+    "standards_aligned": ["IEEE 830", "ISO/IEC 29148"],
+    "normalisation_policy": "one-to-one preferred term mapping"
+  },
+  "core_concepts": {
+    "software requirements specification": {
+      "hausa": "Bayanin Bukatun Manhaja",
+      "type": "document"
+    },
+    "requirement": {
+      "hausa": "Bukata",
+      "type": "concept"
+    },
+    "functional requirement": {
+      "hausa": "Bukatar Aiki",
+      "type": "FR"
+    },
+    "non-functional requirement": {
+      "hausa": "Bukatar Inganci",
+      "type": "NFR"
+    },
+    "system": {
+      "hausa": "Tsarin",
+      "type": "system"
+    },
+    "application": {
+      "hausa": "Manhaja",
+      "type": "system"
+    },
+    "component": {
+      "hausa": "Sashin Tsari",
+      "type": "system"
+    }
+  },
+  "actors": {
+    "user": {
+      "hausa": "Mai amfani",
+      "type": "actor"
+    },
+    "administrator": {
+      "hausa": "Mai gudanarwa",
+      "type": "actor"
+    },
+    "stakeholder": {
+      "hausa": "Mai ruwa da tsaki",
+      "type": "actor"
+    },
+    "client": {
+      "hausa": "Abokin ciniki",
+      "type": "actor"
+    }
+  },
+  "modality": {
+    "shall": {
+      "hausa": "Dole ne",
+      "strength": "mandatory"
+    },
+    "must": {
+      "hausa": "Dole ne",
+      "strength": "mandatory"
+    },
+    "should": {
+      "hausa": "Ya kamata",
+      "strength": "recommended"
+    },
+    "may": {
+      "hausa": "Zai iya",
+      "strength": "optional"
+    },
+    "is required to": {
+      "hausa": "Ana bukatar ya",
+      "strength": "mandatory"
+    }
+  },
+  "functional_actions": {
+    "create": "Ƙirƙira",
+    "read": "Karanta",
+    "update": "Sabunta",
+    "delete": "Goge",
+    "store data": "Ajiye bayanai",
+    "retrieve data": "Samo bayanai",
+    "process data": "Sarrafa bayanai",
+    "display": "Nuna",
+    "validate": "Tabbatar",
+    "authenticate": "Tantance shaida",
+    "authorise": "Ba da izini"
+  },
+  "data_entities": {
+    "data": "Bayanai",
+    "information": "Ilimi",
+    "record": "Rikodi",
+    "report": "Rahoto",
+    "database": "Ma’ajiya ta bayanai",
+    "password": "Kalmar sirri",
+    "user profile": "Bayanan mai amfani"
+  },
+  "quality_attributes": {
+    "performance": "Aiki",
+    "response time": "Lokacin amsawa",
+    "availability": "Samuwa",
+    "reliability": "Dogaro",
+    "scalability": "Faɗaɗawa",
+    "security": "Tsaro",
+    "privacy": "Sirri",
+    "usability": "Sauƙin amfani",
+    "maintainability": "Sauƙin kulawa"
+  },
+  "constraints": {
+    "constraint": "Ƙuntatawa",
+    "limitation": "Iyaka",
+    "condition": "Sharadi",
+    "threshold": "Matsakaici",
+    "timeout": "Lokacin ƙarewa",
+    "dependency": "Dogaro",
+    "standard": "Ka’ida",
+    "compliance": "Bin doka"
+  }
+}
