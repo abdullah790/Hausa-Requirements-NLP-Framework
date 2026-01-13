@@ -72,3 +72,4 @@ The proposed **Fusion Model** significantly outperformed single-encoder baseline
 To run the full extraction and generation process on a new Hausa text file:
 ```python
 python 06_SRS_Generator.py --input "hausa_requirements.txt" --output "Final_SRS.pdf"
+Abdullah Ibrahim Haruna, "An NLP-Supported Framework for Requirements Extraction and Specification in Low-Resource Languages," Nile University of Nigeria, 2025.
